@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "727651569036",
+    "firebase_url": "https://radontest-1005.firebaseio.com",
+    "project_id": "radontest-1005",
+    "storage_bucket": "radontest-1005.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:727651569036:android:16842310be8f76c8",
+        "android_client_info": {
+          "package_name": "com.eduardoflores.radontest"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "727651569036-i5mhptqv0inj385robevcsmtpk64lm73.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.eduardoflores.radontest",
+            "certificate_hash": "1fa5a19e887ffd9735cefad9f3f49cc1b8e3e2e9"
+          }
+        },
+        {
+          "client_id": "727651569036-0kg8lfv2fhr0c6ov8qomukrc7cjh47qs.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDmozgFy90dQgk2Qpg45sfiJWpAwkhCU50"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "727651569036-0kg8lfv2fhr0c6ov8qomukrc7cjh47qs.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
