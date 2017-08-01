@@ -1,5 +1,6 @@
 package com.eduardoflores.radontest
 
+import android.content.Intent
 import android.os.Bundle
 import android.support.v7.app.AppCompatActivity
 import android.util.Log
@@ -26,6 +27,14 @@ class MainActivity : AppCompatActivity() {
         if (getCurrentFirebaseUser() == null) {
             signUpNewUser(mAuth)
         }
+
+        startGetDataActivity()
+    }
+
+    private fun startGetDataActivity() {
+        val intent = Intent(this, GetDataActivity::class.java)
+        intent.putExtra("KEY", "Some extra")
+        startActivity(intent)
     }
 
     private fun getCurrentFirebaseUser(): FirebaseUser? {
@@ -46,7 +55,7 @@ class MainActivity : AppCompatActivity() {
     }
 
     fun signUpNewUser(auth: FirebaseAuth) {
-        val email = "toomanyeduardos@gmail.com"
+        val email = System.currentTimeMillis().toString() + "@test.com"
         val password = "#T6H7bnhkh567NBcccn00"
         auth.createUserWithEmailAndPassword(email, password).addOnCompleteListener{task: Task<AuthResult> ->
             if (task.isSuccessful) {
