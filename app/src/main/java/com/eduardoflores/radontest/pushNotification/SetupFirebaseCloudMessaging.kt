@@ -1,4 +1,4 @@
-package com.eduardoflores.radontest
+package com.eduardoflores.radontest.pushNotification
 
 import android.util.Log
 import com.google.firebase.iid.FirebaseInstanceId

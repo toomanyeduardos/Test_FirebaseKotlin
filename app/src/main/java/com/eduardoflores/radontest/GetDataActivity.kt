@@ -3,6 +3,7 @@ package com.eduardoflores.radontest
 import android.os.Bundle
 import android.support.v7.app.AppCompatActivity
 import android.util.Log
+import com.eduardoflores.radontest.pushNotification.SetupFirebaseCloudMessaging
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.database.*
 import kotlinx.android.synthetic.main.activity_get_data.*

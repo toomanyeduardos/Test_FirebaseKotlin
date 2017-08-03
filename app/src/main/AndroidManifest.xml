@@ -23,17 +23,18 @@
         <activity android:name=".GetDataActivity">
         </activity>
 
-        <service android:name=".SetupFirebaseCloudMessaging">
+        <service android:name=".pushNotification.SetupFirebaseCloudMessaging">
             <intent-filter>
                 <action android:name="com.google.firebase.INSTANCE_ID_EVENT"/>
             </intent-filter>
         </service>
         <service
-            android:name=".MyFirebaseCloudMessagingService">
+            android:name=".pushNotification.MyFirebaseCloudMessagingService">
             <intent-filter>
                 <action android:name="com.google.firebase.MESSAGING_EVENT"/>
             </intent-filter>
         </service>
+
     </application>
 
 </manifest>
