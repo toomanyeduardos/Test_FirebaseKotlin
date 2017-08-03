@@ -59,7 +59,7 @@ class MainActivity : AppCompatActivity() {
 
     fun signUpNewUser(auth: FirebaseAuth) {
         val email = System.currentTimeMillis().toString() + "@example.com"
-        val password = "#T6H7bnhkh567NBcccn00"
+        val password = "*@T6H7bnhkh567NBcccn00"
         auth.createUserWithEmailAndPassword(email, password).addOnCompleteListener{task: Task<AuthResult> ->
             if (task.isSuccessful) {
                 Log.d(TAG, "Task successful!")
