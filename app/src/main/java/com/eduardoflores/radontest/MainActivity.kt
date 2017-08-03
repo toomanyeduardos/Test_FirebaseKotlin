@@ -9,6 +9,7 @@ import com.google.firebase.analytics.FirebaseAnalytics
 import com.google.firebase.auth.AuthResult
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.FirebaseUser
+import kotlinx.android.synthetic.main.activity_main.*
 
 /**
  * https://console.firebase.google.com/project/radontest-1005/overview
@@ -28,7 +29,9 @@ class MainActivity : AppCompatActivity() {
             signUpNewUser(mAuth)
         }
 
-        startGetDataActivity()
+        // lambda learning resource
+        // https://antonioleiva.com/lambdas-kotlin-android/
+        button_get_data.setOnClickListener{startGetDataActivity()}
     }
 
     private fun startGetDataActivity() {
@@ -55,7 +58,7 @@ class MainActivity : AppCompatActivity() {
     }
 
     fun signUpNewUser(auth: FirebaseAuth) {
-        val email = System.currentTimeMillis().toString() + "@test.com"
+        val email = System.currentTimeMillis().toString() + "@example.com"
         val password = "#T6H7bnhkh567NBcccn00"
         auth.createUserWithEmailAndPassword(email, password).addOnCompleteListener{task: Task<AuthResult> ->
             if (task.isSuccessful) {

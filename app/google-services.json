@@ -15,6 +15,14 @@
       },
       "oauth_client": [
         {
+          "client_id": "727651569036-rj3ea7ad6ogqn13kvmieoss6i65r3v4f.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.eduardoflores.radontest",
+            "certificate_hash": "63c6811e4e3f34a17ce9c5f2a42448c0a57be61e"
+          }
+        },
+        {
           "client_id": "727651569036-i5mhptqv0inj385robevcsmtpk64lm73.apps.googleusercontent.com",
           "client_type": 1,
           "android_info": {
